@@ -15,6 +15,20 @@ $ # `cargo`
 $ git clone https://github.com/bouzuya/nostr-keyconv
 $ cd nostr-keyconv/
 $ cargo install --path .
+$ nostr-keyconv --help
+Usage: nostr-keyconv [OPTIONS] <PUBLIC_KEY_OR_PRIVATE_KEY_OR_EVENT_ID>
+
+Arguments:
+  <PUBLIC_KEY_OR_PRIVATE_KEY_OR_EVENT_ID>  private key or public key or event id
+
+Options:
+      --prefix <PREFIX>  [possible values: npub, nsec, note]
+  -h, --help             Print help
+
+$ # `docker`
+$ alias nostr-keyconv='docker run ghcr.io/bouzuya/nostr-keyconv:0.1.0'
+$ nostr-keyconv --help
+...
 ```
 
 ## Usage
