@@ -1,0 +1,12 @@
+[package]
+name = "nostr-keyconv"
+version = "0.0.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.69"
+clap = { version = "4.1.8", features = ["derive"] }
+nostr = "0.18.1"
+
+[dev-dependencies]
+assert_cmd = "2.0.8"
